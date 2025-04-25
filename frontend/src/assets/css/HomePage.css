@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #233ce6;
+  }
+  
+  .App-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    width: 100%; /* Ensure the container takes full width */
+  }
+  
+  .App-logo-ring {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transform-origin: center;
+    height: auto;
+    width: 10vmin;
+    animation: App-logo-ring-spin 20s linear infinite;
+  }
+  
+  /* Styling for the central logo */
+  .App-logo {
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    object-fit: cover;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  }
+  
+  @keyframes App-logo-ring-spin {
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg); /* Maintain centering and rotate the element */
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo-ring {
+      animation: App-logo-ring-spin 20s linear infinite;
+    }
+  }
+  
+  .App-Title {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 8em;
+    color: var(--primary-color);
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .App-Title span {
+    color: transparent;
+    -webkit-text-stroke: 2.5px var(--primary-color);
+  }
+  
+  .button {
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Futura', sans-serif;
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .button p:hover {
+    color: #233ce6;
+  }
+  
+  @media (max-width: 768px) {
+    .App-Container{
+      height: 85vh;
+    }
+  
+    .App-Title {
+      font-size: 3em;
+    }
+  
+    .App-logo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .App-logo-ring {
+      width: 9vmin;
+      height: auto;
+      top: 51%;
+    }
+    .button {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }

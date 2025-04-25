@@ -1,0 +1,84 @@
+/* General Layout for the Summary Section */
+.report-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .report-summary h3 {
+    color: #233ce6;
+  }
+  
+  /* Style for Each Summary Box */
+  .summary-box {
+    flex: 1 1 calc(20% - 10px);
+    margin: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .summary-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .summary-box h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+  }
+  
+  .summary-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Layout for the Graph Boxes */
+  .graph-box {
+    margin: 5px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Ensure two graphs are displayed side by side in a container */
+  .graphs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .graphs-container .graph-box {
+    flex: 1 1 calc(50% - 10px); /* Ensure two graphs fit in one row */
+    margin: 5px; /* Space between graphs */
+  }
+  
+  /* Chart.js styling */
+  .chartjs-render-monitor {
+    max-width: 100%;
+    height: auto !important;
+  }
+  
+  /* Error and Loading Messages */
+  div[role="alert"] {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    background: #f8d7da;
+  }
+  
+  div[role="status"] {
+    color: #6c757d;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #d6d8db;
+    border-radius: 5px;
+    background: #e2e3e5;
+  }

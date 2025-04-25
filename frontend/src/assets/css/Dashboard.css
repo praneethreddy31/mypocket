@@ -1,0 +1,127 @@
+/* Global Styles */
+.App-dashboard {
+    font-family: 'Futura', sans-serif;
+    display: flex;
+    height: 100vh;
+    color: #333;
+}
+
+.dashboard-main {
+    overflow-y: auto;
+  }
+  
+
+/* Content Container */
+.dashboard-content {
+    display: flex;
+    width: 100%;
+    margin-top: 5em;
+    padding: 20px;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.userdata {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.userdata p {
+    margin: 5px 0;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.userdata span {
+    font-weight: bold;
+    color: #233ce6;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.dashboard-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dashboard-menu li {
+    margin-bottom: 20px;
+}
+
+.dashboard-menu li a {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-menu li a:hover {
+    background-color: #233ce6;
+    color: white;
+}
+
+/* Main Content Area */
+.dashboard-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .dashboard-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .dashboard-sidebar {
+        width: 70%;
+    }
+
+    .dashboard-menu li a {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dashboard-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .dashboard-sidebar {
+        width: 70%;
+    }
+
+    .dashboard-menu li a {
+        padding: 1px;
+    }
+    
+}
+
+.dashboard-main {
+    transition: opacity 0.3s ease;
+}

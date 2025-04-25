@@ -1,0 +1,123 @@
+/* General styling for the about page container */
+.App-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    padding: 2em;
+    gap: 2em;
+    font-family: 'Futura', sans-serif;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Styling for the about container that holds the text and images */
+.App-about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Left section for text content */
+.App-about-left {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Right section for images */
+.App-about-right {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Spinning ring animation */
+.About-App-logo-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transform-origin: center;
+    margin-top: 2vmin;
+    height: auto;
+    width: 10vmin;
+    animation: About-App-logo-ring-spin 20s linear infinite;
+}
+
+/* Styling for the central logo */
+.About-App-logo {
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    object-fit: cover;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: #233ce6;
+}
+
+/* Keyframe for the spinning ring animation */
+@keyframes About-App-logo-ring-spin {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); /* Rotate the ring 360 degrees */
+    }
+}
+
+/* Media query for reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+    .About-App-logo-ring {
+        animation: About-App-logo-ring-spin 20s linear infinite;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .App-about-container {
+        flex-direction: column;
+    }
+    .App-about-left {
+        padding: 0;
+    }
+    .App-about-right {
+        padding: 0;
+    }
+    .About-App-logo {
+        display: none;
+    }
+    .About-App-logo-ring {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .About-App-logo {
+        width: 150px;
+        height: 150px;
+    }
+    .About-App-logo-ring {
+        width: 3vmin;
+    }
+
+    .About-App-logo {
+        display: none;
+    }
+    .About-App-logo-ring {
+        display: none;
+    }
+    
+}

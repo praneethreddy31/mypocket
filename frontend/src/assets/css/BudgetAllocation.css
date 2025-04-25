@@ -1,0 +1,206 @@
+.budget-container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Futura", sans-serif;
+    max-width: 1200px; /* Maximum width for large screens */
+  }
+  
+  .budget-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #233ce6;
+  }
+  
+  .date-display {
+    margin-bottom: 2em;
+    color: #333;
+  }
+  
+  .budget-summary {
+    width: 30%;
+    padding: 15px 0 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 2em;
+  }
+  
+  .budget-summary h3 {
+    margin: 0;
+    color: #00796b;
+    font-size: 20px;
+  }
+  
+  .add-budget {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .add-budget select,
+  .add-budget input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Futura", sans-serif;
+    width: 200px; /* Set a minimum width for inputs */
+  }
+  
+  .add-budget button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    font-family: "Futura", sans-serif;
+    min-width: 120px; /* Ensure a minimum width for button */
+  }
+  
+  .add-budget button:hover {
+    background-color: #004d40;
+  }
+  
+  .message {
+    font-size: 14px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+  }
+  
+  .budget-list {
+    list-style: none;
+    padding: 0;
+    width: 75%;
+  }
+  
+  .budget-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .budget-item span {
+    flex: 2;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .budget-item input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .budget-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d32f2f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .budget-item button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .budget-item button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  
+  /* Small screens (tablets and below) */
+  @media (max-width: 768px) {
+    .budget-container {
+      width: 100%;
+      padding: 0 15px; /* Add padding on smaller screens */
+    }
+  
+    .budget-list {
+      width: 100%;
+    }
+  
+    .add-budget select,
+    .add-budget input {
+      width: 100%;
+    }
+  
+    .add-budget button {
+      width: 100%;
+    }
+  
+    .budget-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .budget-item span {
+      margin-bottom: 10px;
+      width: 100%; /* Make it take full width */
+    }
+  
+    .budget-item input {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .budget-item button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Extra small screens (mobile phones and below) */
+  @media (max-width: 480px) {
+    .budget-container {
+      padding: 0 10px; /* Adjust padding for mobile */
+    }
+  
+    .add-budget select,
+    .add-budget input {
+      width: 100%;
+      font-size: 16px; /* Larger font size on mobile */
+    }
+  
+    .add-budget button {
+      width: 100%;
+      font-size: 16px; /* Larger font size on mobile */
+    }
+  
+    .budget-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px; /* Slightly more padding */
+    }
+  
+    .budget-item span {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .budget-item input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .budget-item button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }

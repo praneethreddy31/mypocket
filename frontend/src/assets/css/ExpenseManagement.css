@@ -1,0 +1,208 @@
+.expense-container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Futura", sans-serif;
+    max-width: 1200px; /* Maximum width for large screens */
+  }
+  
+  .expense-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #233ce6;
+  }
+  
+  .date-display {
+    margin-bottom: 2em;
+    color: #333;
+  }
+  
+  .expense-summary {
+    width: 30%;
+    padding: 15px 0 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 2em;
+  }
+  
+  .expense-summary h3 {
+    margin: 0;
+    padding: 0 0 1em 0;
+    color: #d32f2f;
+    font-size: 20px;
+  }
+  
+  .add-expense {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .add-expense select,
+  .add-expense input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Futura", sans-serif;
+    width: 200px; /* Set a minimum width for inputs */
+  }
+  
+  .add-expense button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    font-family: "Futura", sans-serif;
+    min-width: 120px; /* Ensure a minimum width for button */
+  }
+  
+  .add-expense button:hover {
+    background-color: #004d40;
+  }
+  
+  .message {
+    font-size: 14px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+  }
+  
+  .expense-list {
+    list-style: none;
+    padding: 0;
+    width: 75%;
+  }
+  
+  .expense-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .expense-item span {
+    flex: 2;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .expense-item input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .expense-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d32f2f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .expense-item button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .expense-item button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  
+  /* Small screens (tablets and below) */
+  @media (max-width: 768px) {
+    .expense-container {
+      width: 100%;
+      padding: 0 15px; /* Add padding on smaller screens */
+    }
+  
+    .expense-list {
+      width: 100%;
+    }
+  
+    .add-expense select,
+    .add-expense input {
+      width: 100%;
+    }
+  
+    .add-expense button {
+      width: 100%;
+    }
+  
+    .expense-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .expense-item span {
+      margin-bottom: 10px;
+      width: 100%; /* Make it take full width */
+    }
+  
+    .expense-item input {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .expense-item button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Extra small screens (mobile phones and below) */
+  @media (max-width: 480px) {
+    .expense-container {
+      padding: 0 10px; /* Adjust padding for mobile */
+    }
+  
+    .add-expense select,
+    .add-expense input {
+      width: 100%;
+      font-size: 16px; /* Larger font size on mobile */
+    }
+  
+    .add-expense button {
+      width: 100%;
+      font-size: 16px; /* Larger font size on mobile */
+    }
+  
+    .expense-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px; /* Slightly more padding */
+    }
+  
+    .expense-item span {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .expense-item input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .expense-item button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

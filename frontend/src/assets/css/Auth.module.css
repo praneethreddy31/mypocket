@@ -1,0 +1,68 @@
+.authContainer {
+    max-width: 400px;
+    margin: 10em auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .authForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .authInput {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .authButton {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .authButton:disabled {
+    background: #a7c7e7;
+  }
+  
+  .authButton:hover {
+    background: #0056b3;
+  }
+  
+  .message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+  }
+  
+  .authlogo {
+    width: 80px;
+  }
+
+  .message {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .successMessage {
+    color: green;
+  }
+  
+  .errorMessage {
+    color: red;
+  }
+  
